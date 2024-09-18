@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>
+		Новеньки
+	</title>
+</head>
+<body>
+	<div class="content">
+		<div class="dialogue">
+			Новеньки сначи так, выбирай чо будешь кидать:<br>
+			<a class="button" id="legs" onclick="show()">1. ножки</a><br>
+			<a class="button" id="ass" onclick="show()">2. попачку</a><br>
+			<a class="button" id="boobs" onclick="show()">3. сисечки</a><br>
+			<a class="button" id="reject" href="reject.html">4. ничего</a>
+		</div>
+		<div id="context-menu">
+			Новеньки, скинь фотку<br>
+			<input type="file" id="file"><br>
+			<input type="button" value="↪" onclick="send()" id="send-button" class="context-button">
+			<input type="button" value="×" onclick="hide()" id="hide-button" class="context-button">
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
